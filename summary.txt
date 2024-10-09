@@ -1,0 +1,60 @@
+STEP 1 = Import the Tkinter Module
+   
+    from tkinter import *
+
+This line imports all the classes and functions from the Tkinter library, 
+which is used to create graphical user interfaces (GUIs) in Python.
+
+
+STEP 2 =  Create the Main Window
+
+     window = Tk()  # to create window
+
+Here, we create the main application window by instantiating the Tk class.
+ This window will serve as the container for all other widgets.
+
+ 
+ STEP 3 = Define the Conversion Function
+
+     def conversion():
+    nepalirupees = (float(dollars.get()) * 134.40)
+    t1.delete(1.0, END)
+    t1.insert(END, nepalirupees)    and soon...............................
+
+
+STEP 4 = Create the Convert Button
+  
+     b1 = Button(window, text="Convert", command=conversion)
+     b1.grid(row=0, column=0)
+
+
+STEP 5 =  Create an Entry Widget
+
+      dollars = StringVar()  # StringVar with capital 'S' and capital 'V'
+       e1 = Entry(window, textvariable=dollars)
+       e1.grid(row=0, column=1)
+
+
+STEP 6 =  Create a Text Widget for Output
+
+       t1 = Text(window, height=5, width=15)
+       t1.grid(row=0, column=2)
+
+
+STEP 7 = Run the Main Event Loop
+
+       window.mainloop()
+
+
+
+      SUMMARY
+   -->Overall, this code creates a simple GUI application that converts
+    an amount in dollars to Nepalese rupees ,canadian,euros when the user clicks the "Convert" button,
+     displaying the result in a text area.
+
+    
+
+       
+
+
+   
